@@ -1,13 +1,14 @@
 import React from 'react';
 import { Fragment } from 'react';
 import "./App.scss";
-import HomeScreen from './screens/home';
+import Routes from './routes';
+
 
 
 function App() {
   return (
     <Fragment>
-      <HomeScreen />
+      <Routes />
     </Fragment>
   );
 }
