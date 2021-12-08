@@ -1,13 +1,13 @@
 import React from 'react';
 import { Fragment } from 'react';
 import "./App.scss";
-import Home from './components/home';
+import HomeScreen from './screens/home';
 
 
 function App() {
   return (
     <Fragment>
-      <Home />
+      <HomeScreen />
     </Fragment>
   );
 }
