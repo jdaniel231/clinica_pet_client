@@ -1,6 +1,6 @@
 import { faSignInAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Box, Button, Column, Container, Field, Icon, Image, Input, Label, Section, Title } from "rbx";
+import { Box, Button, Column, Control, Container, Field, Icon, Image, Input, Label, Section, Title } from "rbx";
 import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
 import LoginImage from '../../assets/images/login.png';
@@ -22,17 +22,19 @@ function Home() {
               </Icon>
               Por favor, entre com seu login
             </Title>                
-              <Box className="box">
-                
-                <Image.Container>
+              <Box className="box">                
+                <Image.Container className="avatar" size={128}>
                   <Image src={LoginImage}  />
-                </Image.Container>        
-                
+                </Image.Container>
                 <Field>
-                  <Input className="input is-medium" type="text" placeholder="Crmv" />
+                  <Control>
+                    <Input className="input is-medium" type="text" placeholder="Crmv" />
+                  </Control>
                 </Field>
                 <Field>
-                  <Input className="input is-medium" type="password" placeholder="Password" />
+                  <Control>
+                    <Input className="input is-medium" type="password" placeholder="Password" />
+                  </Control>
                 </Field>
                 <Button className="button is-block is-info is-medium is-fullwidth">Login</Button>          
             </Box>
