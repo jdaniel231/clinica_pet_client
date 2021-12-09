@@ -11,35 +11,42 @@ import '../../styles/home.scss'
 function Home() {
   
 
-  return(    
-    <Section className="hero is-success  is-fullheight">
-      <Container className="has-text-centered">
-        <Column classaName="is-4 is-offset-4">               
-          <Box className="box">
+  return(   
+    <Fragment className="html-body"> 
+      <Section className="hero is-success  is-fullheight">
+        <Container className="has-text-centered">
+          <Column classaName="is-4 is-offset-4">   
             <Title  className="subtitle has-text-black" >
               <Icon>
                 <FontAwesomeIcon className="fa" icon={faSignInAlt} />
               </Icon>
               Por favor, entre com seu login
-            </Title>     
-            <Image.Container>
-              <Image src={LoginImage}  />
-            </Image.Container>        
-            
-            <Field>
-              <Input className="input is-medium" type="text" placeholder="Crmv" />
-            </Field>
-            <Field>
-              <Input className="input is-medium" type="password" placeholder="Password" />
-            </Field>
-            <Button className="button is-block is-info is-medium is-fullwidth">Login</Button>
-          <a className="has-text-grey">Cadastrar</a>
-        </Box>
-        </Column>
-      </Container>
-    
-    </Section>
-
+            </Title>                
+              <Box className="box">
+                
+                <Image.Container>
+                  <Image src={LoginImage}  />
+                </Image.Container>        
+                
+                <Field>
+                  <Input className="input is-medium" type="text" placeholder="Crmv" />
+                </Field>
+                <Field>
+                  <Input className="input is-medium" type="password" placeholder="Password" />
+                </Field>
+                <Button className="button is-block is-info is-medium is-fullwidth">Login</Button>          
+            </Box>
+            <p className="has-text-grey">
+             <Link to="/register">
+              <a  href="#">Cadastrar</a> &nbsp;·&nbsp;
+             </Link>
+              <a href="#">Contato</a>
+            </p>
+          </Column>
+        </Container>
+      
+      </Section>
+    </Fragment>
     
   )
 }
