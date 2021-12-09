@@ -13,7 +13,7 @@ function Home() {
 
   return(   
     <Fragment className="html-body"> 
-      <Section className="hero is-success  is-fullheight">
+      <Section size="medium" className="hero is-success is-fullheight">
         <Container className="has-text-centered">
           <Column classaName="is-4 is-offset-4">   
             <Title  className="subtitle has-text-black" >
