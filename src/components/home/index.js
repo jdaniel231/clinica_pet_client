@@ -13,7 +13,7 @@ function Home() {
 
   return(   
     <Fragment className="html-body"> 
-      <Section size="medium" className="hero is-success is-fullheight">
+      <Section size="small" className="hero is-success is-fullheight">
         <Container className="has-text-centered">
           <Column classaName="is-4 is-offset-4">   
             <Title  className="subtitle has-text-black" >
@@ -39,9 +39,6 @@ function Home() {
                 <Button className="button is-block is-info is-medium is-fullwidth">Login</Button>          
             </Box>
             <p className="has-text-grey">
-             <Link to="/register">
-              <a  href="#">Cadastrar</a> &nbsp;·&nbsp;
-             </Link>
               <a href="#">Contato</a>
             </p>
           </Column>
