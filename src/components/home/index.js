@@ -39,9 +39,6 @@ function Home() {
                 <Button className="button is-block is-info is-medium is-fullwidth">Login</Button>          
             </Box>
             <p className="has-text-grey">
-             <Link to="/register">
-              <a  href="#">Cadastrar</a> &nbsp;·&nbsp;
-             </Link>
               <a href="#">Contato</a>
             </p>
           </Column>
