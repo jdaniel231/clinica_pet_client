@@ -6,12 +6,12 @@ import '../../../styles/auth.scss'
 const RegisterScreen = () =>(
   <Fragment>
     <Section className="hero is-success is-fullheight">
-      <Container lassName="has-text-centered">
-        <Column classaName="is-4 is-offset-4">
+      <Container>
+        <Column className="is-12">
           <Title  className="subtitle has-text-black" >
               Cadastro
             </Title>      
-            <Box classaName="auth">
+            <Box className="auth">
               <RegisterForm />
             </Box>
         </Column>

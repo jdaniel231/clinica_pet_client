@@ -12,10 +12,10 @@ function Home() {
   
 
   return(   
-    <Fragment className="html-body"> 
+    <Fragment> 
       <Section size="small" className="hero is-success is-fullheight">
         <Container className="has-text-centered">
-          <Column classaName="is-4 is-offset-4">   
+          <Column>   
             <Title  className="subtitle has-text-black" >
               <Icon>
                 <FontAwesomeIcon className="fa" icon={faSignInAlt} />
@@ -39,6 +39,7 @@ function Home() {
                 <Button className="button is-block is-info is-medium is-fullwidth">Login</Button>          
             </Box>
             <p className="has-text-grey">
+              <Link to="/register">Cadastro</Link>&nbsp;·&nbsp;
               <a href="#">Contato</a>
             </p>
           </Column>
