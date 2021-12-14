@@ -2,6 +2,7 @@ import { Column, Hero, Section, Title, Container, Icon, Tile, Card} from 'rbx';
 import React, { Fragment } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import SearchPet from '../../pets/search';
 
 function Contanier(props) {
   return(
@@ -55,11 +56,7 @@ function Contanier(props) {
             </Column>
 
             <Column className="column is-6">
-              <Card>
-                <Card.Header>
-                  <Card.Header.Title>Pesquisa</Card.Header.Title>
-                </Card.Header>
-              </Card>
+              <SearchPet />
             </Column>
           </Column.Group>
         </Column>
