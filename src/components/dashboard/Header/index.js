@@ -20,7 +20,7 @@ function Header(props) {
       <Container className=" container">
         <Navbar.Brand className=" navbar-brand">
           <Link to='/pets'>
-            <a>ClinicaVet</a>
+            <a className="navbar-item brand-text">ClinicaVet</a>
           </Link>
           <Navbar.Burger className=" navbar-burger burger" data-target="navMenu">
             <span></span>
@@ -28,14 +28,14 @@ function Header(props) {
             <span></span>
           </Navbar.Burger>
         </Navbar.Brand>      
-      
+
         <Navbar.Menu className="navbar-menu" id="navMenu">
-          <Navbar.Segment as="div" className="navbar-end navbar-item" align="right">
+          <Navbar.Segment as="div" className="navbar-end" align="right">
             {/* <Column>
               <a href="/pets" class="navbar-item">Home</a>
             </Column> */}
-            <Column  class="navbar-item">
-              <a href="#" onClick={e => logOut()}>Logout</a>
+            <Column  >
+              <a className="navbar-item" href="/" onClick={e => logOut()}>Logout</a>
             </Column>
           </Navbar.Segment>
         </Navbar.Menu>

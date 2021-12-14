@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import Dashboard from '../../../components/dashboard';
+import Dashboard from '../../../components/dashboard/';
 
 const PetScreen = () =>(
   <Fragment>
