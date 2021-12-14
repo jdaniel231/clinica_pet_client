@@ -17,30 +17,29 @@ function Header(props) {
 
   return(
     <Navbar className=" navbar is-white">
-      <Column.Group className=" container">
-        <Column size='11' offset='1' className="navbar-start" align='start'>
+      <Container className=" container">
+        <Navbar.Brand className=" navbar-brand">
           <Link to='/pets'>
             <a>ClinicaVet</a>
           </Link>
-        </Column>
-      </Column.Group>       
-      <Navbar.Burger className=" navbar-burger burger" data-target="navbar-menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </Navbar.Burger>
-      <Navbar.Menu id="navbar-menu">
-        <Navbar.Segment className="navbar-start" align="start">
-          <Navbar.Item as="div">
-            <a>Home</a>
-          </Navbar.Item>
-        </Navbar.Segment>
-        <Navbar.Segment className=" navbar-item navbar-end" align="rigth">
-          <Navbar.Item className="navbar-end" align="end">
-            <a href="#" onClick={e => logOut()}>Logout</a>
-          </Navbar.Item>
-        </Navbar.Segment>
-      </Navbar.Menu>
+          <Navbar.Burger className=" navbar-burger burger" data-target="navMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </Navbar.Burger>
+        </Navbar.Brand>      
+      
+        <Navbar.Menu className="navbar-menu" id="navMenu">
+          <Navbar.Segment as="div" className="navbar-end navbar-item" align="right">
+            {/* <Column>
+              <a href="/pets" class="navbar-item">Home</a>
+            </Column> */}
+            <Column  class="navbar-item">
+              <a href="#" onClick={e => logOut()}>Logout</a>
+            </Column>
+          </Navbar.Segment>
+        </Navbar.Menu>
+      </Container>
     </Navbar>
   )
 }
