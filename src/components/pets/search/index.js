@@ -1,4 +1,4 @@
-import { faSearch, faSortDown } from '@fortawesome/free-solid-svg-icons';
+import { faAngleDown, faSearch } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Card, Content, Control, Icon, Input } from 'rbx';
 import React from 'react';
@@ -10,10 +10,13 @@ function SearchPet(props) {
       <Card.Header>
         <Card.Header.Title >
           Pesquisa
-          <Icon className="is-right">
-            <FontAwesomeIcon icon={faSortDown} /> 
-          </Icon>          
         </Card.Header.Title>
+        <Card.Header.Icon>
+          <Icon>
+            <FontAwesomeIcon icon={faAngleDown} />
+          </Icon>  
+        </Card.Header.Icon>    
+        
       </Card.Header>
       <Card.Content>
         <Content>

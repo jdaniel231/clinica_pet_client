@@ -1,14 +1,17 @@
 import React, { Fragment } from 'react';
 import Contanier from './container';
 import Header from './Header';
+import '../../styles/dashboard/header.scss';
 
 function Dashboard() {
 
   return(
-    <Fragment>
-      <Header />
-      <Contanier />
-    </Fragment>
+    <body>
+      <Fragment>
+        <Header />
+        <Contanier />
+      </Fragment>
+    </body>
   )
 }
 
