@@ -5,6 +5,7 @@ import HomeScreen from "./screens/home";
 import PetScreen from "./screens/pet/index";
 import UserEditScreen from "./screens/users/edit";
 import PrivateRoute from './components/auth/private_route'
+import RegisterPetScreen from "./screens/pet/register";
 
 const Routes = () => (
   <BrowserRouter>
@@ -13,6 +14,7 @@ const Routes = () => (
       <Route exact path="/register" component={RegisterScreen} />
       <Route exact path="/users/edit" component={UserEditScreen} />
       <PrivateRoute exact path="/pets" component={PetScreen} />
+      <PrivateRoute exact path="/pets/register" component={RegisterPetScreen} />
     </Switch>
   </BrowserRouter>
 )

@@ -1,15 +1,28 @@
-import { faAngleDown, faSearch, faTrash } from '@fortawesome/free-solid-svg-icons';
+import { faAngleDown, faSearch, faTrash, faPlus } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Button, Card, Icon, Table } from 'rbx';
-import React from 'react';
+import React, { useState } from 'react';
+import { Redirect } from 'react-router-dom';
 
 function ListPet (props) {
+  const [registerPet, setResgiterPet] = useState(false)
+
+  if(registerPet == true)
+    return <Redirect to={{pathname: "/pets/register"}}/>
+ 
   return(
     <Card className="card events-card">
       <Card.Header>
         <Card.Header.Title>
-          Consultas
-        </Card.Header.Title>    
+          Pacientes
+        </Card.Header.Title>
+        <Card.Header.Icon>
+          <Icon className="icon">
+            <a onClick={ e => setResgiterPet(true)}>
+              <FontAwesomeIcon icon={faPlus} />
+            </a>
+          </Icon>
+        </Card.Header.Icon>     
         <Card.Header.Icon>
           <Icon className="icon">
             <FontAwesomeIcon icon={faAngleDown} />
