@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import SearchPet from '../../pets/search';
 import '../../../styles/dashboard/header.scss'
+import ListPet from '../../pets/list';
 
 function Contanier(props) {
   return(
@@ -21,15 +22,15 @@ function Contanier(props) {
           <Tile className="info-tiles ">
             <Tile class="tile is-ancestor has-text-centered ">
               <Tile className="column tile is-parent">
-                <Tile className="tile is-child box">
+                <Tile className="tile is-child box atendimento">
                   <Title className="title">236</Title>
-                  <Title className="subtitle">Atendimentos</Title>
+                  <Title className="subtitle">Atendimentos Hoje</Title>
                 </Tile>
               </Tile>
                 <Tile className="column tile is-parent">
-                  <Tile className="tile is-child box">
+                  <Tile className="tile is-child box atendimento-total">
                     <Title className="title">236</Title>
-                    <Title className="subtitle">Cadastro</Title>
+                    <Title className="subtitle">Total de atendimentos</Title>
                   </Tile>
                 </Tile>
             </Tile>
@@ -37,27 +38,8 @@ function Contanier(props) {
 
           <Column.Group className="columns">
             <Column className="column is-6">
-              <Card className="card events-card">
-                <Card.Header>
-                  <Card.Header.Title>
-                    Consultas
-                  </Card.Header.Title>    
-                  <Card.Header.Icon>
-                    <Icon className="icon">
-                      <FontAwesomeIcon icon={faAngleDown} />
-                    </Icon>
-                  </Card.Header.Icon>              
-                </Card.Header>
-
-                <Card className="card-table">
-                  Historico da consultas
-                  Historico da consultas
-                  Historico da consultas
-                  Historico da consultas
-                  Historico da consultas
-                </Card>
-
-              </Card>
+             <ListPet />
+                
             </Column>
 
             <Column className="column is-6">
